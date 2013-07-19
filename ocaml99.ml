@@ -9,7 +9,7 @@ let rec last_two = function
   | _::xs  -> last_two xs
 
 let rec at k = function
-  | [] -> None
+  | []    -> None
   | x::xs -> if k = 1 then x else at (k - 1) xs
 
 let length l =
